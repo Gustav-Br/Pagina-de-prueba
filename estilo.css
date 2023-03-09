@@ -1,9 +1,11 @@
 html {
     font-family: Arial Tahoma Sans-Serif;
+    margin: 0;
+    padding: 0;
   }
   
   .body {
-    background: #fcf3a1;
+    background: #ebe39f;
     margin: 80px 10px 0px;
   }
   
@@ -11,7 +13,7 @@ html {
     display: flex;
     background: #41e75d;
     width: 100vw;
-    height: 16%;
+    height: 18vh;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -73,9 +75,9 @@ html {
     margin: 4px 20px;
   }
 
-  #fruit-img {
-    width: 120px;
-    height: 120px;
+  #imagen {
+    height: 180px;
+    width: auto;
     border-radius: 4px;
     margin: 4px 20px;
   }
@@ -118,7 +120,7 @@ html {
     }
   }
   
-  #foot {
+  #copir {
     margin: 20px 90px;
   }
   
@@ -128,6 +130,13 @@ html {
     display: flex;
     justify-content: flex-end;
     margin: 0 90px;
+  }
+
+  .foot {
+    background: #8292aa;
+    width: 100vw;
+    height: 16vh;
+    margin: -10px;
   }
   
   @media (max-width: 600px) {
