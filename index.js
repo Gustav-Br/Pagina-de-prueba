@@ -40,7 +40,7 @@ function render(array) {
                           <p Class="Price">$ ${array[i].precio}</p> 
                         </div>
                       </div>
-                    </div>`
+                      </div>`
 
     code += codeRender;
   }
