@@ -29,22 +29,22 @@ let arreglo = [
 
 
 function render(array) {
-  var code = ''; 
-	for (var i = 0; i < array.length; i++) {
+  var code = []; 
+  array.map(item => {
     var codeRender = `<div id="Card"> <div id="Content"> 
                       <div class="col-xs-3"> 
                         <div class="Cardd"> 
-                          <img id="imagen" src="${array[i].imagen}"> 
+                          <img id="imagen" src="${item.imagen}"> 
                           <p></p> 
-                          <p>${array[i].nombre}</p> 
-                          <p Class="Price">$ ${array[i].precio}</p> 
+                          <p>${item.nombre}</p> 
+                          <p Class="Price">$ ${item.precio}</p> 
                         </div>
                       </div>
                       </div>`
 
-    code += codeRender;
-  }
-
+    code.push(codeRender);
+  });
+  console.log(code);
 	document.getElementById('container').innerHTML = code;
   
 }
